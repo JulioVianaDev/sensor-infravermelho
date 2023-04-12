@@ -13,4 +13,7 @@ void loop(){
   }else{//SENÃO, FAZ
         digitalWrite(pinoLed, LOW); //apaga O LED
   }    
+  Serial.print(analogRead(pinoSensor));
+  Serial.print("\t");
+  Serial.println(digitalRead(pinoLed));
 }
