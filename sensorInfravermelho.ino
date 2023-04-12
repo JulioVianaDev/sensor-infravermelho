@@ -2,6 +2,7 @@ int pinoLed = 12; //PINO DIGITAL UTILIZADO PELO LED
 int pinoSensor = 8; //PINO DIGITAL UTILIZADO PELO SENSOR
    
 void setup(){  
+  Serial.begin(9600);
   pinMode(pinoSensor, INPUT); //DEFINE O PINO COMO ENTRADA
   pinMode(pinoLed, OUTPUT); //DEFINE O PINO COMO SAÍDA   
   digitalWrite(pinoLed, LOW); //LED INICIA DESLIGADO
